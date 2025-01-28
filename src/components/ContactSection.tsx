@@ -36,7 +36,7 @@ export default function ContactSection() {
     className="px-12 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg text-white font-bold text-xl"
     onClick={() => {
       const link = document.createElement('a');
-      link.href = '/src/components/schedule.pdf'; // File path relative to the `public` folder in Next.js
+      link.href = '/images/schedule.pdf'; // File path relative to the `public` folder in Next.js
       link.download = 'schedule.pdf'; // Name of the file for download
       document.body.appendChild(link);
       link.click();
