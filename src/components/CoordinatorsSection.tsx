@@ -7,7 +7,7 @@ interface Coordinator {
 }
 
 const staffCoordinator: Coordinator = {
-  image: "/src/components/neema.jpg",
+  image: "/images/neema.jpg",
   name: "Prof. Neema H",
   designation: "Assistant Professor",
 }
@@ -15,30 +15,30 @@ const staffCoordinator: Coordinator = {
 const studentCoordinators: Coordinator[][] = [
   // Row 1 - 2 coordinators
   [
-    { image: "/src/components/Bhuvan.jpg", name: "Bhuvan Shetty", designation: "Student Coordinator" },
-    { image: "/src/components/adithya.jpg", name: "Adithya G", designation: "Student Coordinator" },
+    { image: "/images/Bhuvan.jpg", name: "Bhuvan Shetty", designation: "Student Coordinator" },
+    { image: "/images/adithya.jpg", name: "Adithya G", designation: "Student Coordinator" },
   ],
   // Row 2 - 3 coordinators
   [
-    { image: "/src/components/shivani.jpg", name: "Shivani Rao", designation: "Student Coordinator" },
-    { image: "/src/components/ranjith.jpg", name: "Ranjeeth", designation: "Student Coordinator" },
-    { image: "/src/components/jenita.jpg", name: "Jenita D Costa", designation: "Student Coordinator" },
+    { image: "/images/shivani.jpg", name: "Shivani Rao", designation: "Student Coordinator" },
+    { image: "/images/ranjith.jpg", name: "Ranjeeth", designation: "Student Coordinator" },
+    { image: "/images/jenita.jpg", name: "Jenita D Costa", designation: "Student Coordinator" },
   ],
   // Row 3 - 5 coordinators
   [
-    { image: "/src/components/shraddha.jpg", name: "Shraddha B D", designation: "Student Coordinator" },
-    { image: "/src/components/thripthi.jpg", name: "Thripthi", designation: "Student Coordinator" },
-    { image: "/src/components/chaithanya.jpg", name: "Chaithanya", designation: "Student Coordinator" },
-    { image: "/src/components/raksha.JPG", name: "Raksha Shetty", designation: "Student Coordinator" },
-    { image: "/src/components/prajna.jpg", name: "Prajna K", designation: "Student Coordinator" },
+    { image: "/images/shraddha.jpg", name: "Shraddha B D", designation: "Student Coordinator" },
+    { image: "/images/thripthi.jpg", name: "Thripthi", designation: "Student Coordinator" },
+    { image: "/images/chaithanya.jpg", name: "Chaithanya", designation: "Student Coordinator" },
+    { image: "/images/raksha.JPG", name: "Raksha Shetty", designation: "Student Coordinator" },
+    { image: "/images/prajna.jpg", name: "Prajna K", designation: "Student Coordinator" },
   ],
   // Row 4 - 5 coordinators
   [
-    { image: "/src/components/kanya.jpg", name: "Kanya Shenoy", designation: "Student Coordinator" },
-    { image: "/src/components/disha.jpg", name: "Disha M T", designation: "Student Coordinator" },
-    { image: "/src/components/karthik.jpg", name: "PG Karthik", designation: "Student Coordinator" },
-    { image: "/src/components/dhanush.JPG", name: "Dhanush H", designation: "Student Coordinator" },
-    { image: "/src/components/chetan.JPG", name: "Chethan", designation: "Student Coordinator" },
+    { image: "/images/kanya.jpg", name: "Kanya Shenoy", designation: "Student Coordinator" },
+    { image: "/images/disha.jpg", name: "Disha M T", designation: "Student Coordinator" },
+    { image: "/images/karthik.jpg", name: "PG Karthik", designation: "Student Coordinator" },
+    { image: "/images/dhanush.JPG", name: "Dhanush H", designation: "Student Coordinator" },
+    { image: "/images/chetan.JPG", name: "Chethan", designation: "Student Coordinator" },
   ],
 ]
 

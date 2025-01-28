@@ -15,7 +15,7 @@ interface Event {
 const events: Event[] = [
   {
     id: 1,
-    image: "/src/components/CD.png",
+    image: "/images/CD.png",
     theme: "STOCKFISH",
     title: "Coding",
     rules: [
@@ -30,7 +30,7 @@ const events: Event[] = [
   },
   {
     id: 2,
-    image: "/src/components/WD.jpeg",
+    image: "/images/WD.jpeg",
     theme: "Ex Machina",
     title: "Designing",
     rules: [
@@ -46,7 +46,7 @@ const events: Event[] = [
   },
   {
     id: 3,
-    image: "/src/components/xyz.jpg",
+    image: "/images/xyz.jpg",
     theme: "Space Odyssey",
     title: "IT Quiz",
     rules: [
@@ -62,7 +62,7 @@ const events: Event[] = [
   },
   {
     id: 4,
-    image: "/src/components/terminator.jpg",
+    image: "/images/terminator.jpg",
     theme: "Terminator",
     title: "IT Manager",
     rules: ["Individual participation", "Participant should carry their updated resume(hardcopy)"],
@@ -73,7 +73,7 @@ const events: Event[] = [
   },
   {
     id: 5,
-    image: "/src/components/gaming.jpg",
+    image: "/images/gaming.jpg",
     theme: "Wall-E",
     title: "Gaming",
     rules: [
@@ -88,7 +88,7 @@ const events: Event[] = [
   },
   {
     id: 6,
-    image: "/src/components/av.jpeg",
+    image: "/images/av.jpeg",
     theme: "Ultron",
     title: "Mad Ads",
     rules: [
@@ -103,7 +103,7 @@ const events: Event[] = [
   },
   {
     id: 7,
-    image: "/src/components/sp.jpeg",
+    image: "/images/sp.jpeg",
     theme: "The Agent",
     title: "Surprise Event",
     rules: [
