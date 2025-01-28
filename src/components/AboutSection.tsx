@@ -60,7 +60,7 @@ export default function AboutSection() {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-amber-400">
-                <CounterAnimation from={0} to={7} duration={2} />+
+                <CounterAnimation from={0} to={15} duration={2} />+
               </div>
               <div className="text-sm text-gray-400 mt-2">Prizes to win</div>
             </div>
