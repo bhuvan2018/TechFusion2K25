@@ -63,6 +63,10 @@ export default function RegistrationForm({ isOpen, onClose }: Props) {
     Object.entries(formData).forEach(([event, participants]) => {
       if (Array.isArray(participants)) {
         participants.forEach((participant, index) => {
+          if (event === "madAds" && index === 4) {
+            // Skip validation for the 5th Mad Ads member
+            return
+          }
           if (!nameRegex.test(participant.name)) {
             toast.error(`Invalid name for ${event} participant ${index + 1}`)
             isValid = false
@@ -98,7 +102,7 @@ export default function RegistrationForm({ isOpen, onClose }: Props) {
         from_name: "Event Registration System",
         message: `
 Mad Ads Team:
-${formData.madAds.map((p, i) => `Member ${i + 1}: ${p.name} (${p.phone})`).join("\n")}
+${formData.madAds.map((p, i) => `Member ${i + 1}: ${p.name || "-"} (${p.phone || "-"})`).join("\n")}
 
 Coding Team:
 ${formData.coding.map((p, i) => `Member ${i + 1}: ${p.name} (${p.phone})`).join("\n")}
@@ -120,12 +124,7 @@ ${formData.gaming.name} (${formData.gaming.phone})
 `,
       }
 
-      const response = await emailjs.send(
-        "service_o17yyqp",
-        "template_0f6e8pl",
-        templateParams,
-        "x2oCH1LfVilF8i5ij",
-      )
+      const response = await emailjs.send("service_o17yyqp", "template_0f6e8pl", templateParams, "x2oCH1LfVilF8i5ij")
 
       console.log("EmailJS Response:", response)
 
@@ -181,7 +180,7 @@ ${formData.gaming.name} (${formData.gaming.phone})
                         onChange={(e) => updateParticipant("madAds", index, "name", e.target.value)}
                         placeholder={`Member ${index + 1} Name`}
                         className="bg-gray-800 text-white rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-500 outline-none"
-                        required
+                        required={index < 4}
                       />
                       <input
                         type="tel"
@@ -190,7 +189,7 @@ ${formData.gaming.name} (${formData.gaming.phone})
                         onChange={(e) => updateParticipant("madAds", index, "phone", e.target.value)}
                         placeholder="Phone Number"
                         className="bg-gray-800 text-white rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-500 outline-none"
-                        required
+                        required={index < 4}
                       />
                     </div>
                   ))}
