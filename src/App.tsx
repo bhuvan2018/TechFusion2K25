@@ -44,7 +44,7 @@ export default function App() {
                   WHERE TALENT MEETS OPPORTUNITY!!
                 </h2>
                 <p className="text-xl text-gray-300 mb-8">
-                  National Level IT & Management Fest
+                  College Level IT Fest!
                 </p>
                 
                 <motion.button
