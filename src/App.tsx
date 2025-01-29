@@ -26,6 +26,7 @@ export default function App() {
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-black to-indigo-900 text-white">
       <Toaster position="top-center" />
       <Navbar />
+      <div id='home' className="h-16" />
       
       <main>
         {/* Hero Section */}
@@ -82,15 +83,19 @@ export default function App() {
         </div>
 
         {/* About Section */}
+        <div id='about' className="h-16" />
         <AboutSection />
 
         {/* Events Section */}
+        <div id='events' className="h-16" />
         <EventsSection />
 
         {/* Coordinators Section */}
+        <div id='committee' className="h-16" />
         <CoordinatorsSection />
 
         {/* Contact Section */}
+        <div id='contact' className="h-16" />
         <ContactSection />
 
         {/* Registration Form Modal */}
